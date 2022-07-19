@@ -25,8 +25,9 @@
       $statement->bindParam(":phone_number", $_POST["phone_number"]);
       $statement->execute();
 
-      $_SESSION["flash"] = ["message" => "Contact {$_POST['name']} added."];
-
+      $_SESSION["flash"] = ["message" => "Contact {$_POST['name']} added.","as" => ["success"]];
+      var_dump($_SESSION);
+      die();
       header("Location: home.php");
       return;
     }

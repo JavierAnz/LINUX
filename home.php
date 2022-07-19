@@ -41,6 +41,8 @@ $contacts = $conn->query("SELECT * FROM contacts WHERE user_id = {$_SESSION['use
         </div>
       </div>
     <?php endforeach ?>
+
+    
     
 
     
